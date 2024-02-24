@@ -1,0 +1,46 @@
+:root {
+    --branding-first-color: #FB337B;
+    --brandind-second-color: #05ACAA;
+    --font-color: ;
+    --heading-font-family: "Montserrat", sans-serif;
+    --default-font-family: "Raleway", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #18191A;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #545353;
+}
+
+.hero img {
+    transform: translate(100px, 0px);
+}
+
+#fullName {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Libre Caslon Display", serif;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+#name {
+    border-right: 1px solid var(--brandind-second-color);
+    color: #FFFF;
+    padding: 15px;
+    height: 80%;
+}
+
+#lastName {
+    margin-top: 140px;
+    color: var(--brandind-second-color);
+    padding: 15px;
+}
