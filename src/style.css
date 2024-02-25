@@ -44,3 +44,154 @@ html {
     color: var(--brandind-second-color);
     padding: 15px;
 }
+
+.container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.mainServices {
+    display: flex;
+    justify-items: stretch;
+    margin-left: 10%;
+    padding-top: 20px;
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--brandind-second-color);
+    font-family: var(--heading-font-family);
+    font-size: 80px;
+    font-weight: 100;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.linkServiceContainer {
+    text-align: center;
+    padding: 70px;
+
+
+}
+
+#linkServiceContainer1 {
+    border-right: 1px solid var(--brandind-second-color);
+}
+
+.serviceLink {
+    text-decoration: none;
+    font-family: var(--default-font-family);
+    color: var(--branding-first-color);
+    border: 1px solid var(--branding-first-color);
+    padding: 10px 15px;
+    transition: all 300ms ease-in-out;
+}
+
+.serviceLink:hover {
+    color: #FFFF;
+    background-color: var(--branding-first-color);
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--brandind-second-color);
+    border: none;
+}
+
+.collagenBox {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.collagenBox p {
+    text-align: left;
+    color: #FFFF;
+    font-family: var(--default-font-family);
+
+}
+
+#colageno {
+    color: var(--branding-first-color);
+    font-size: 40px;
+    font-family: var(--default-font-family);
+    font-weight: 500;
+}
+
+#collagenLinkBox {
+    margin-top: 65px;
+}
+
+#collagenLink {
+    font-family: var(--default-font-family);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    color: #FFFF;
+    background-color: var(--brandind-second-color);
+    transition: all 300ms ease-in-out;
+}
+
+#collagenLink:hover {
+    border: 1px solid var(--brandind-second-color);
+    background-color: transparent;
+    color: var(--brandind-second-color);
+}
+
+footer {
+    display: block;
+    padding: 65px 700px;
+
+}
+
+.icons {
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--brandind-second-color);
+}
+
+.iconLink {
+    text-decoration: none;
+    color: var(--branding-first-color);
+    border-radius: 50%;
+    padding: 5px;
+    transition: all 200ms ease-in-out;
+    font-size: 25px;
+}
+
+.iconLink:hover {
+    color: #FFFF;
+    background-color: var(--branding-first-color);
+}
+
+.logo {
+    padding-top: 15px;
+    display: block;
+    text-align: center;
+
+}
+
+footer img {
+    margin-top: 20px;
+    height: 20%;
+    width: 20%;
+}
