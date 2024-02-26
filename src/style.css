@@ -7,11 +7,30 @@
 }
 
 body,
-html {
+html,
+.container {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     background-color: #18191A;
+}
+
+
+
+navbar {
+    width: 100%;
+    height: 10px;
+    background-color: transparent;
+
+}
+
+.navbarLink {
+    text-decoration: none;
+    color: #545353;
+    font-family: var(--default-font-family);
+    line-height: 2;
+    margin-left: 40px;
 }
 
 .hero {
@@ -20,23 +39,25 @@ html {
     background-color: #545353;
 }
 
-.hero img {
-    transform: translate(100px, 0px);
+h1 {
+    font-size: 70px;
 }
 
 #fullName {
     display: flex;
     justify-content: space-evenly;
     font-family: "Libre Caslon Display", serif;
-    font-size: 40px;
-    margin-top: 100px;
+
+    margin-top: 200px;
+    margin-bottom: 20px;
+
 }
 
 #name {
     border-right: 1px solid var(--brandind-second-color);
     color: #FFFF;
     padding: 15px;
-    height: 80%;
+    height: 75%;
 }
 
 #lastName {
@@ -45,10 +66,9 @@ html {
     padding: 15px;
 }
 
-.container {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+section {
+    display: block;
+    margin-left: 100px;
 }
 
 .mainServices {
@@ -58,16 +78,22 @@ html {
     padding-top: 20px;
 }
 
-
 .image-container {
     position: relative;
     display: inline-block;
 }
 
 .image-container img {
-    display: block;
+
     width: 100%;
     height: auto;
+    filter: contrast(82%) invert(19%);
+}
+
+h2 {
+    font-family: var(--heading-font-family);
+    font-size: 90px;
+    font-weight: 300;
 }
 
 .overlay-text {
@@ -76,11 +102,9 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--brandind-second-color);
-    font-family: var(--heading-font-family);
-    font-size: 80px;
-    font-weight: 100;
     padding: 10px 20px;
     text-align: center;
+    text-shadow: -3px 7px 6px grey
 }
 
 .linkServiceContainer {
@@ -119,6 +143,9 @@ hr {
     padding: 15px 0px;
     display: flex;
     justify-content: space-evenly;
+    border-bottom: 1px solid var(--brandind-second-color);
+    border-top: 1px solid var(--brandind-second-color);
+    border-width: 100%;
 
 }
 
@@ -156,14 +183,89 @@ hr {
     color: var(--brandind-second-color);
 }
 
+.plan {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--brandind-second-color);
+    text-align: left;
+    color: #FFFF;
+    font-family: var(--default-font-family);
+    padding-top: 45px;
+}
+
+h3 {
+    color: var(--branding-first-color);
+    font-family: var(--heading-font-family);
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.planDescription {
+    padding: 35px 50px;
+}
+
+.trainingContact {
+    text-decoration: none;
+    color: #FFFF;
+    border: 1px solid var(--branding-first-color);
+    background-color: var(--branding-first-color);
+    display: inline-block;
+    padding: 5px 15px;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 500ms ease-in-out;
+}
+
+.trainingContact:hover {
+    border: 1px solid var(--branding-first-color);
+    background-color: transparent;
+    color: var(--branding-first-color);
+}
+
+.contactInfo {
+    text-align: center;
+    padding: 110px;
+
+}
+
+.contactSources {
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 300ms ease-in-out;
+
+}
+
+.contactSources:hover,
+.iconText:hover,
+.contactIcon:hover {
+    transform: scale(1.41, 1.41);
+    color: var(--brandind-second-color);
+    cursor: pointer;
+}
+
+.contactIcon {
+    text-decoration: none;
+    color: #FFFF;
+    font-size: 35px;
+    transition: all 300ms ease-in-out;
+}
+
+.iconText {
+    font-size: 20px;
+    transition: all 300ms ease-in-out;
+
+}
+
+
+
 footer {
     display: block;
-    padding: 65px 700px;
+    padding: 65px 400px;
 
 }
 
 .icons {
-    padding: 25px;
+    padding: 20px;
     display: flex;
     justify-content: space-evenly;
     border-bottom: 1px solid var(--brandind-second-color);
@@ -173,9 +275,9 @@ footer {
     text-decoration: none;
     color: var(--branding-first-color);
     border-radius: 50%;
-    padding: 5px;
+    padding: 5px 10px;
     transition: all 200ms ease-in-out;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .iconLink:hover {
@@ -183,15 +285,27 @@ footer {
     background-color: var(--branding-first-color);
 }
 
-.logo {
-    padding-top: 15px;
-    display: block;
-    text-align: center;
 
-}
 
 footer img {
-    margin-top: 20px;
-    height: 20%;
-    width: 20%;
+    padding-top: 30px;
+    text-align: center;
+    width: 25%;
+    height: 25%;
+    margin-left: 37%;
+}
+
+footer .contactFooter {
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1000px;
+}
+
+footer #trianglePink {
+    color: var(--branding-first-color);
+}
+
+footer #triangleGreen {
+    color: var(--brandind-second-color);
 }
