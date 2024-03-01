@@ -15,14 +15,24 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <navbar>
-        <a href="contacto.html" target="_self">Contacto</a>
-    </navbar>
+    <nav>
+        <div class="container-fluid ">
+
+            <a class="navbar-brand  " href="#servicios"> Inicio</a>
+            <a class="navbar-brand " href="#servicios">Servicios</a>
+            <a class="navbar-brand " href="contacto.html">Contacto </a>
+        </div>
+
+    </nav>
     <div class="hero">
+
         <div id="fullName">
             <div id="name">
                 <h1>Belén</h1>
@@ -32,13 +42,13 @@
             </div>
         </div>
 
-
-        <img src="pictures/coverphoto.png" alt="intro pic" />
-
+        <div class="introPic">
+            <img src="pictures/coverphoto.png" alt="intro pic" />
+        </div>
     </div>
     <div class="container">
-        <section class="mainServices">
-            <div class="image-container">
+        <section class="mainServices" id="servicios">
+            <div class="image-container ">
                 <img src="pictures/photo1.png" alt="fitness pic" class="img-fluid" />
                 <div class="overlay-text">
                     <h2> FITNESS </h2>
