@@ -18,16 +18,17 @@ html {
 
 nav .container-fluid {
     background: transparent;
-    width: 100%;
-    position: fixed;
+    width: 105%;
+    position: absolute;
     padding-top: 10px;
     text-align: right;
-    font-family: var(--default-font-family);
+    padding-right: 120px;
+    font-family: var(--heading-font-family);
 }
 
 .navbar-brand {
     color: #545353;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 400;
     margin-right: 10%;
     padding: 0px;
@@ -38,6 +39,7 @@ nav .container-fluid {
 .navbar-brand:hover {
     color: var(--branding-second-color);
     font-weight: 600;
+    font-size: 20px;
 
 }
 
@@ -85,8 +87,6 @@ h1 {
 
 }
 
-
-
 section {
     display: block;
     margin: 0 auto;
@@ -98,6 +98,11 @@ section {
     display: flex;
     justify-content: space-evenly;
     padding-top: 40px;
+
+}
+
+.serviceBox {
+    padding: 20px 10px;
 }
 
 .image-container {
@@ -109,13 +114,25 @@ section {
 .image-container img {
     width: 100%;
     height: auto;
-    filter: contrast(82%) invert(19%);
+    filter: contrast(70%) invert(2%);
+    opacity: 65%;
+    transition: all.5s;
 }
 
+.image-container img:hover {
+    filter: none;
+    opacity: none;
+
+}
+
+
 h2 {
+
+    text-decoration: none;
     font-family: var(--heading-font-family);
     font-size: 90px;
     font-weight: 500;
+    color: var(--branding-second-color);
 }
 
 .overlay-text {
@@ -123,10 +140,8 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--branding-second-color);
     padding: 10px 20px;
     text-align: center;
-
 
 }
 
@@ -249,7 +264,7 @@ h3 {
 .contactSources:hover,
 .iconText:hover,
 .contactIcon:hover {
-    transform: scale(1.41, 1.41);
+    transform: scale(1.20, 1.20);
     color: var(--branding-second-color);
     cursor: pointer;
 }
