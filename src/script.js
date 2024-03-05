@@ -1,3 +1,5 @@
+AOS.init();
+
 let scrollPos = 0;
 const nav = document.querySelector(".container-fluid");
 
@@ -16,5 +18,3 @@ function checkPosition() {
 }
 
 window.addEventListener("scroll", checkPosition);
-
-AOS.init();
