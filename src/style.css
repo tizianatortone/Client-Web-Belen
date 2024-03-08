@@ -1,7 +1,6 @@
 :root {
     --branding-first-color: #FB337B;
     --branding-second-color: #05ACAA;
-    --font-color: ;
     --heading-font-family: "Montserrat", sans-serif;
     --default-font-family: "Raleway", sans-serif;
 }
@@ -324,4 +323,10 @@ footer img {
     width: 25%;
     height: 25%;
     margin-left: 37%;
+}
+
+#specialFooter {
+    background: rgb(251, 51, 123);
+    background: linear-gradient(90deg, rgba(251, 51, 123, 1) 29%, rgba(24, 25, 26, 1) 50%, rgba(5, 172, 170, 1) 74%);
+
 }
