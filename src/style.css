@@ -19,6 +19,7 @@ html {
 nav .container-fluid {
     background: transparent;
     width: 105%;
+
     position: absolute;
     padding-top: 10px;
     text-align: right;
@@ -28,6 +29,7 @@ nav .container-fluid {
 
 .navbar-brand {
     color: #545353;
+    height: 50px;
     font-size: 17px;
     font-weight: 400;
     margin-right: 10%;
@@ -127,14 +129,6 @@ section {
 }
 
 
-h2 {
-
-    text-decoration: none;
-    font-family: var(--heading-font-family);
-    font-size: 90px;
-    font-weight: 500;
-    color: var(--branding-second-color);
-}
 
 .overlay-text {
     position: absolute;
@@ -143,8 +137,18 @@ h2 {
     transform: translate(-50%, -50%);
     padding: 10px 20px;
     text-align: center;
+    font-family: var(--heading-font-family);
+    font-size: 90px;
+    font-weight: 500;
 
 }
+
+.overlay-text a {
+    color: var(--branding-second-color);
+    text-decoration: none;
+
+}
+
 
 .linkServiceContainer {
     text-align: center;
@@ -250,6 +254,7 @@ h3 {
 }
 
 .contactInfo {
+
     text-align: center;
     padding: 110px;
 
@@ -261,6 +266,7 @@ h3 {
     transition: all 300ms ease-in-out;
 
 }
+
 
 .contactSources:hover,
 .iconText:hover,
@@ -318,19 +324,4 @@ footer img {
     width: 25%;
     height: 25%;
     margin-left: 37%;
-}
-
-footer .contactFooter {
-    display: block;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1000px;
-}
-
-footer #trianglePink {
-    color: var(--branding-first-color);
-}
-
-footer #triangleGreen {
-    color: var(--branding-second-color);
 }
