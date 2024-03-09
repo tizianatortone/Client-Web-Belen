@@ -326,7 +326,14 @@ footer img {
 }
 
 #specialFooter {
-    background: rgb(251, 51, 123);
-    background: linear-gradient(90deg, rgba(251, 51, 123, 1) 29%, rgba(24, 25, 26, 1) 50%, rgba(5, 172, 170, 1) 74%);
 
+    background: rgb(251, 51, 123);
+    background: linear-gradient(326deg, rgba(251, 51, 123, 1) 0%, rgba(24, 25, 26, 1) 42%, rgba(24, 25, 26, 1) 61%, rgba(5, 172, 170, 1) 87%);
+
+}
+
+#specialFooter img {
+    display: block;
+    width: 10%;
+    height: 10%;
 }
