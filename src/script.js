@@ -18,3 +18,15 @@ function checkPosition() {
 }
 
 window.addEventListener("scroll", checkPosition);
+
+new Typewriter("#belen", {
+  strings: ["Belén"],
+  autoStart: true,
+  loop: true,
+});
+
+new Typewriter("#rodriguez", {
+  strings: ["Rodríguez"],
+  autoStart: true,
+  loop: true,
+});
