@@ -89,7 +89,11 @@ section {
     margin: 0 auto;
     padding: 20px;
 
+
+
 }
+
+
 
 #storyBox {
     border-bottom: solid 1px var(--branding-second-color);
@@ -243,6 +247,14 @@ section {
 
 }
 
+.img-style {
+    width: 75%;
+
+    filter: brightness(92%) contrast(115%);
+    opacity: 0.6;
+    transition: all 200ms ease-in-out;
+
+}
 
 .plan {
     display: flex;
@@ -256,7 +268,7 @@ section {
 h3 {
     color: var(--branding-first-color);
     font-family: var(--heading-font-family);
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
 }
 
@@ -280,6 +292,21 @@ h3 {
     border: 1px solid var(--branding-first-color);
     background-color: transparent;
     color: var(--branding-first-color);
+}
+
+
+.coaching {
+    text-align: center;
+    color: #FFFF;
+    font-family: var(--default-font-family);
+    font-size: 16px;
+
+}
+
+.coaching img {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
 }
 
 .contactInfo {
