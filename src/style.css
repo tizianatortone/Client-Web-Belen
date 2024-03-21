@@ -86,11 +86,8 @@ h1 {
 
 section {
     display: block;
-    margin: 0 auto;
     padding: 20px;
-
-
-
+    color: #FFFF;
 }
 
 
@@ -100,7 +97,6 @@ section {
     display: flex;
     justify-content: space-evenly;
     padding-top: 60px;
-    color: #FFFF;
     font-size: 18px;
 
 }
@@ -206,7 +202,6 @@ section {
 
 .collagenBox p {
     text-align: left;
-    color: #FFFF;
 
 }
 
@@ -247,14 +242,13 @@ section {
 
 }
 
-.img-style {
-    width: 75%;
-
-    filter: brightness(92%) contrast(115%);
-    opacity: 0.6;
-    transition: all 200ms ease-in-out;
-
+.story img {
+    height: 90%;
+    width: auto;
+    border-radius: 3px;
 }
+
+
 
 .plan {
     display: flex;
@@ -294,12 +288,20 @@ h3 {
     color: var(--branding-first-color);
 }
 
+.img-style {
+    width: 75%;
+    filter: brightness(92%) contrast(115%);
+    opacity: 0.8;
+    border-radius: 7px;
+
+}
 
 .coaching {
     text-align: center;
     color: #FFFF;
     font-family: var(--default-font-family);
     font-size: 16px;
+    padding: 80px;
 
 }
 
@@ -307,12 +309,13 @@ h3 {
     width: 70%;
     height: auto;
     margin-left: 15%;
+    border-radius: 7px;
 }
 
 .contactInfo {
 
     text-align: center;
-    padding: 110px;
+    padding: 150px;
 
 
 }
@@ -349,7 +352,7 @@ h3 {
 
 footer {
     display: block;
-    padding: 65px 450px;
+    padding: 75px 450px;
 
 }
 
@@ -383,9 +386,9 @@ footer img {
 }
 
 #specialFooter {
-
+    margin-top: 70px;
     background: rgb(251, 51, 123);
-    background: linear-gradient(326deg, rgba(251, 51, 123, 1) 0%, rgba(24, 25, 26, 1) 42%, rgba(24, 25, 26, 1) 61%, rgba(5, 172, 170, 1) 100%);
+    background: linear-gradient(326deg, rgba(251, 51, 123, 1) 0%, rgba(24, 25, 26, 1) 37%, rgba(24, 25, 26, 1) 61%, rgba(5, 172, 170, 1) 100%);
 
 }
 
