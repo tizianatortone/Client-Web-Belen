@@ -243,8 +243,7 @@ section {
 }
 
 .story img {
-    height: 90%;
-    width: auto;
+    margin-top: 30px;
     border-radius: 3px;
 }
 
@@ -306,14 +305,13 @@ h3 {
 }
 
 .coaching img {
-    width: 70%;
-    height: auto;
-    margin-left: 15%;
+    height: 900px;
+    width: auto;
+    margin-left: 25%;
     border-radius: 7px;
 }
 
 .contactInfo {
-
     text-align: center;
     padding: 150px;
 
