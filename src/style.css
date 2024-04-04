@@ -137,7 +137,7 @@ section {
     width: 100%;
     height: auto;
     filter: contrast(70%) invert(2%);
-    opacity: 65%;
+    opacity: 55%;
     transition: all.5s;
 }
 
