@@ -43,7 +43,7 @@ nav .container-fluid {
     display: flex;
     justify-content: flex-end;
     background-color: #545353;
-    overflow: hidden;
+
 }
 
 .introPic {
@@ -247,13 +247,24 @@ section {
     border-radius: 3px;
 }
 
+#slogan {
+    color: var(--branding-second-color);
+    font-style: italic;
+}
 
+#trainingPlans {
+    padding: 45px 65px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 100;
+    font-style: italic;
+}
 
 .plan {
     display: flex;
     justify-content: space-evenly;
     border-bottom: 1px solid var(--branding-second-color);
-    text-align: left;
     color: #FFFF;
     padding-top: 45px;
 }
@@ -265,8 +276,14 @@ h3 {
     font-weight: 400;
 }
 
-.planDescription {
-    padding: 35px 50px;
+.planDescription-right {
+    padding: 25px 40px;
+    text-align: right;
+}
+
+.planDescription-left {
+    padding: 25px 54px;
+    text-align: left;
 }
 
 .planContact {
@@ -288,10 +305,11 @@ h3 {
 }
 
 .img-style {
-    width: 75%;
     filter: brightness(92%) contrast(115%);
-    opacity: 0.8;
-    border-radius: 7px;
+    opacity: 0.7;
+    border-radius: 10px;
+    width: 65%;
+    padding-bottom: 20px;
 
 }
 
@@ -311,13 +329,12 @@ h3 {
 
 }
 
-.colageno h5 {
-    color: var(--branding-second-color);
-}
 
+.colageno h5,
 .colageno h3 {
     color: var(--branding-second-color);
 }
+
 
 ul {
     list-style-type: none;
@@ -331,6 +348,7 @@ ul {
 .contactSources {
     display: flex;
     justify-content: space-evenly;
+    padding: 25px 55px;
     transition: all 300ms ease-in-out;
 
 }
@@ -426,13 +444,17 @@ footer img {
     .heroMobile h1 {
         font-size: 50px;
         padding-top: 65px;
+        padding-bottom: 80px;
     }
 
     .heroMobile i {
         color: var(--branding-second-color);
         font-size: 30px;
-        padding-left: 110px;
+        margin-left: 40%;
+        transition: all 200ms ease-in-out;
+
     }
+
 
     #belen {
         color: #FFFF;
@@ -447,7 +469,6 @@ footer img {
     }
 
     #storyBox {
-
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         padding-bottom: 30px;
@@ -459,22 +480,8 @@ footer img {
 
     }
 
-    .serviceBox {
-        padding: 20px 10px;
-    }
-
-
-
     .overlay-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 10px 20px;
-        text-align: center;
-        font-family: var(--heading-font-family);
         font-size: 45px;
-        font-weight: 500;
 
     }
 
@@ -486,9 +493,7 @@ footer img {
 
 
     .linkServiceContainer {
-
         padding-top: 30px;
-
     }
 
     #linkServiceContainer1 {
@@ -503,12 +508,13 @@ footer img {
 
     .collagenBox p {
         text-align: center;
+        padding-top: 10px;
 
     }
 
     #colageno {
-
-        margin-left: 20%;
+        font-size: 30px;
+        margin-left: 18%;
     }
 
 
@@ -518,24 +524,41 @@ footer img {
     }
 
     .story {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: block;
         padding: 45px 30px;
-        line-height: 2;
     }
 
+    #trainingPlans {
+        padding: 15px;
+        text-align: center;
+        font-size: 15px;
+
+
+    }
 
     .plan {
         display: block;
-
+        text-align: center;
     }
 
+    h3 {
+        font-size: 20px;
+    }
 
-    .planDescription {
+    .planDescription-left,
+    .planDescription-right {
         padding: 10px 0;
         margin: 10px 40px;
+        text-align: center;
+        font-size: 15px;
     }
 
+    .coaching,
+    .colageno {
+        text-align: center;
+        font-size: 13;
+        padding: 15px;
+    }
 
     .returnLink {
         text-align: center;
@@ -554,8 +577,8 @@ footer img {
     }
 
     .contactSources {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        display: block;
+        padding: 10px 0px;
 
     }
 
