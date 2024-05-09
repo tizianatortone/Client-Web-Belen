@@ -307,7 +307,6 @@ h3 {
 .img-style {
     filter: brightness(92%) contrast(115%);
     opacity: 0.7;
-    border-radius: 10px;
     width: 65%;
     padding-bottom: 20px;
 
