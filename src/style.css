@@ -216,6 +216,7 @@ section {
 }
 
 .collagenLink {
+    display: inline-block;
     text-decoration: none;
     text-align: center;
     padding: 10px 15px;
