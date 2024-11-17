@@ -262,13 +262,6 @@ section {
     font-style: italic;
 }
 
-.plan {
-    display: flex;
-    justify-content: space-evenly;
-    border-bottom: 1px solid var(--branding-second-color);
-    color: #FFFF;
-    padding-top: 45px;
-}
 
 h3 {
     color: var(--branding-first-color);
@@ -277,15 +270,47 @@ h3 {
     font-weight: 400;
 }
 
-.planDescription-right {
-    padding: 25px 40px;
-    text-align: right;
+.fitness-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
-.planDescription-left {
-    padding: 25px 40px;
-    text-align: left;
+.card {
+    background-color: #18191A;
+    border: none;
+    width: 80%;
+
 }
+
+.card-img-top {
+    border-radius: 10px;
+    filter: brightness(80%);
+
+}
+
+.card-title {
+    color: var(--branding-first-color);
+    font-family: var(--heading-font-family);
+    font-weight: 400;
+    text-align: center;
+}
+
+.planDetails {
+    text-decoration: none;
+    color: var(--branding-second-color);
+}
+
+.collapse {
+    text-align: center;
+    color: #FFFF;
+    font-size: 13px;
+    padding-top: 5px;
+
+}
+
+
 
 .planContact {
     text-decoration: none;
@@ -305,12 +330,6 @@ h3 {
     color: var(--branding-first-color);
 }
 
-.img-style {
-    filter: brightness(92%) contrast(115%);
-    opacity: 0.7;
-    width: 65%;
-    padding-bottom: 20px;
-}
 
 .coaching,
 .colageno {
@@ -532,24 +551,27 @@ footer img {
         text-align: center;
         font-size: 15px;
 
+    }
+
+    .fitness-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
 
     }
 
-    .plan {
-        display: block;
-        text-align: center;
+    .card {
+        margin-left: 7%;
+        width: 70%;
     }
+
 
     h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    .planDescription-left,
-    .planDescription-right {
-        padding: 10px 0;
-        margin: 10px 40px;
-        text-align: center;
-        font-size: 15px;
+    .planContact {
+        display: block;
+
     }
 
     .coaching,
